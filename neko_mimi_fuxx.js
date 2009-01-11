@@ -15,7 +15,7 @@
 
 // http://d.hatena.ne.jp/amachang/20061201/1164986067
 /*@cc_on var currentScript = (function (e) { if(e.nodeName.toLowerCase() == 'script') return e; return arguments.callee(e.lastChild) })(document);
-// @*/ var currentScript = document.evaluate('//script[last()]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+// @*/ var currentScript = document.evaluate('/descendant::script[last()]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
 // http://twitter.com/nanto_vi/statuses/418740272
 var prog = currentScript.textContent || currentScript.text;
